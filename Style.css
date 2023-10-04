@@ -1,28 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: nome;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #1b1726;
 }
+
 img {
     max-width: 100%;
 }
 
-.container{
+.container {
     max-width:1200px;
     margin: 0 auto;
 }
 
 .header {
     background-image: url(Images/Fondo.jpg);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -30,6 +32,8 @@ img {
     min-height: 80vh;
     padding: 80px 0;
 }
+
+
 
 .menu {
     position: absolute;
@@ -73,14 +77,16 @@ img {
 .menu-icono{
     width: 25px;
 }
+
 .menu label {
     cursor: pointer;
     display: none;
 }
 
--header-cointent {
-    display: felx;
+.header-contaient {
+    display: flex;
 }
+
 .header-txt {
     flex-basis: 50px;
 }
@@ -145,6 +151,7 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
+
 .product-1 {
     background-color: #2a223a;
 }
@@ -178,12 +185,117 @@ h3 {
 }
 
 .contact {
-    padding: 150px 300px;
+    padding: 150px 300px
 }
 
-.contact-content {
+.contact-content-3 {
     background-color: #2a223a;
     text-align: center;
-    padding: 50px;
-    border-radius: 5px;
+    padding: 70px;
+    border-radius: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 18px 25px;
+    background-color: #3f3456;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 17px;
+}
+
+::placeholder {
+    color: #FFF;
+    font-size: 17px;
+}
+
+.btn-3 {
+    background-color: #ff5a2c;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.link ul {
+    display: flex;
+}
+
+.link ul li > a {
+    font-size: 17px;
+    color: #FFF;
+    margin-right: 20px;
+}
+
+.link ul li > a:hover {
+    color: #ff5a2c;
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .emnu .navar {
+        position: absolite;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ff5a2c;
+        display: none;
+    }
+
+    .menu navbar ul li a:hover{
+        color: #181726;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 8vh;
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-txt {
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .header-txt h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .butons {
+        justify-content: center;
+    }
+
+    .btn-1:last-of-type {
+        margin-right: 0;
+    }
+
 }
